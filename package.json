@@ -1,0 +1,23 @@
+{
+  "name": "shadymeadowsbb_testframework",
+  "version": "1.0.0",
+  "description": "Test automation framework for CH testing task",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daleoH/ShadyMeadowsBB_TestFramework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/daleoH/ShadyMeadowsBB_TestFramework/issues"
+  },
+  "homepage": "https://github.com/daleoH/ShadyMeadowsBB_TestFramework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.0.14"
+  }
+}
