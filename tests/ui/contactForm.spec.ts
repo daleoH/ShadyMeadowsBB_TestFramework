@@ -10,6 +10,7 @@ test.describe('Contact Form Tests', () => {
   });
 
   test('should submit contact form successfully', async ({ page }) => {
+    //Arrange
     const contactData = {
       name: 'Test User',
       email: 'test@example.com',
@@ -17,17 +18,18 @@ test.describe('Contact Form Tests', () => {
       subject: 'Test Automation Inquiry',
       message: 'This is a test message for automation testing.'
     };
-
     await homePage.fillContactForm(contactData);
+    //Act
     await homePage.submitContact();
-
+    //Assert
     await expect(page.locator('text=Thanks for getting in touch')).toBeVisible();
   });
 
   test('should validate required fields in contact form', async ({ page }) => {
+    //Act
     // Submit empty form
     await homePage.submitContact();
-    
+    //Assert
     // Check for validation messages for all required fields
     await expect(page.getByText('Email may not be blank')).toBeVisible();
     await expect(page.getByText('Phone may not be blank')).toBeVisible()

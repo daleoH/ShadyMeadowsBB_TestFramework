@@ -5,8 +5,7 @@ export class HomePage {
   readonly checkIn: Locator;
   readonly checkOut: Locator;
   readonly checkAvailabilityButton: Locator;
-  readonly roomName: Locator;
-  readonly room: Locator;
+  readonly roomTitle: Locator;
   readonly roomDescription: Locator;
   readonly roomCards: Locator;
   readonly bookThisRoomButton: Locator;
@@ -22,10 +21,10 @@ export class HomePage {
     this.checkAvailabilityButton = page.getByRole('button', { name: 'Check Availability' });
     this.checkIn = page.locator('div', { hasText: /^Check In$/ }).getByRole('textbox');
     this.checkOut = page.locator('div', { hasText: /^Check Out$/ }).getByRole('textbox');
-    this.roomName = page.locator('.card-title');
+    this.roomTitle = page.locator('.card-title');
     this.roomDescription = page.locator('.card-text');
     this.roomCards = page.locator('#rooms .col-md-6.col-lg-4');
-    this.bookThisRoomButton = page.getByRole('link', { name: 'Book now' })//.nth(1);
+    this.bookThisRoomButton = page.locator('#rooms .col-md-6.col-lg-4').getByRole('link', { name: 'Book now' });
     this.contactName = page.getByTestId('ContactName')
     this.contactEmail = page.getByTestId('ContactEmail')
     this.contactPhone = page.getByTestId('ContactPhone')
@@ -42,16 +41,16 @@ export class HomePage {
     return await this.roomCards.first().locator('.room-price').textContent();
   }
 
-  async getRoomeTitle() {
-    return await this.roomCards.first().locator('.room-price').textContent();
+  async getRoomTitle() {
+    return await this.roomCards.first().locator('.card-title').textContent();
   }
 
   async getRoomeDescription() {
     return await this.roomCards.first().locator('.room-price').textContent();
   }
 
-  async bookFirstRoom() {
-    await this.bookThisRoomButton.nth(1).click();
+  async bookRoomButton() {
+    await this.bookThisRoomButton.first().click();
   }
   async findAllRoomCards() {
     return this.roomCards;
