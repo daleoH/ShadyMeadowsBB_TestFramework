@@ -9,20 +9,22 @@ Please make sure you have the following installed:
 + IDE of choice (IntelliJ)
 
 ## Installation steps:
-1. Clone the repository (HTTP or SSL)
+1. Clone the repository (HTTP or SSH)
   
          git clone https://github.com/daleoH/ShadyMeadowsBB_TestFramework.git
-4. Change directory to the required folder that you installed the project
-5. Add playwright dependency
+4. Open this repository in your IDE of choice
+5. Open a terminal and install the required dependencies
    
-         npm i -D @playwright/test        
+         npm install       
 6. Install playwright browsers 
    
          npx playwright install      
-7. Install faker.js Library
+  
+Optional install if npm install doesn't install all the required dependencies   
+8. Install faker.js Library
          
          npm install @faker-js/faker --save-dev
-8. Install accessibility plugin
+9. Install accessibility plugin
    
          npm install @axe-core/playwright --save-dev
 
