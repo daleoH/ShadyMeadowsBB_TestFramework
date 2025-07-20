@@ -10,17 +10,19 @@ Please make sure you have the following installed:
 
 ## Installation steps:
 1. Clone repository locally
-2. Change directory to the required folder that you installed the project
-3. Add playwright dependency
+  
+         git clone 
+4. Change directory to the required folder that you installed the project
+5. Add playwright dependency
    
          npm i -D @playwright/test        
-4. Install playwright browsers 
+6. Install playwright browsers 
    
          npx playwright install      
-5. Install faker.js Library
+7. Install faker.js Library
          
          npm install @faker-js/faker --save-dev
-6. Install accessibility plugin
+8. Install accessibility plugin
    
          npm install @axe-core/playwright --save-dev
 
