@@ -6,7 +6,7 @@ Please make sure you have the following installed:
 
 + Node.js (https://nodejs.org/en/)
 + NPM (https://docs.npmjs.com/getting-started)
-+ IDE of choice (IntelliJ)
++ IDE of choice (e.g VSCode)
 
 ## Installation steps:
 1. Clone the repository (HTTP or SSH)
