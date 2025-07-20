@@ -9,9 +9,9 @@ Please make sure you have the following installed:
 + IDE of choice (IntelliJ)
 
 ## Installation steps:
-1. Clone repository locally
+1. Clone the repository (HTTP or SSL)
   
-         git clone 
+         git clone https://github.com/daleoH/ShadyMeadowsBB_TestFramework.git
 4. Change directory to the required folder that you installed the project
 5. Add playwright dependency
    
