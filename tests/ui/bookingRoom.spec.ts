@@ -28,7 +28,7 @@ test.beforeEach(async ({ page, }) => {
     await bookingPage.selectDateRange(checkInDate, checkOutDate);
     //check rooms that are available
     await homePage.checkAvailabilityButton.click();
-    await homePage.roomCards.scrollIntoViewIfNeeded
+    await homePage.roomCards.scrollIntoViewIfNeeded();
     await page.waitForLoadState('networkidle');
     //click on first available room to book
     await homePage.bookRoomButton();
