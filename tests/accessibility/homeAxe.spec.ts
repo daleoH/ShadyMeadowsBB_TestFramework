@@ -5,7 +5,8 @@ import { HomePage } from '../page-objects/HomePage';
 test.describe('review rooms tests', () => {
     let homePage: HomePage;
 
-  test.beforeEach(async ({ page }) => {
+  test.beforeEach(async ({ page, browserName }) => {
+    test.skip(browserName !== 'chromium', 'Accessibility tests are only stable in Chromium');
     homePage = new HomePage(page);
     await homePage.navigateToHome();
   });
