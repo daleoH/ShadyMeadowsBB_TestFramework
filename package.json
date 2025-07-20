@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "Test automation framework for CH testing task",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+      "setup": "npm install && npx playwright install",
+      "test": "npx playwright test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/daleoH/ShadyMeadowsBB_TestFramework.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dale Harris",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {

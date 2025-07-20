@@ -12,7 +12,7 @@ test.describe('review rooms tests', () => {
   test.afterEach(async ({ page }) => {
     await page.close();
   });
-test('Verify at least one room in the rooms section is present on the UI without checking availability', async ({ page }) => {
+test('Verify at least one room in the rooms section is present on the UI without checking availability @smoke', async ({ page }) => {
   // Act
   // Find all room cards inside the rooms section of the page
   const roomCards = await homePage.findAllRoomCards();
