@@ -64,6 +64,6 @@ HTML report:
 Here you will find the tests running on CI Github actions after each push/pull request. 
 
 Steps to view:
-1. Navigate to repository (https://github.com/daleoH/parabank_playwright)
+1. Navigate to repository ([https://github.com/daleoH/parabank_playwright](https://github.com/daleoH/ShadyMeadowsBB_TestFramework))
 2. Select 'Actions' tab
 3. Select one of the workflow runs to see summary
